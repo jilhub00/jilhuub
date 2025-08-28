@@ -414,7 +414,7 @@ renderGrid(videos);
 */
 
  // Replace this with your ad link
-  const adLink = "https://example.com";
+  const adLink = "https://otieu.com/4/9748998";
 
   // Time in milliseconds before redirect (e.g., 5000 = 5 seconds)
   const delay = 5000;
@@ -423,6 +423,20 @@ renderGrid(videos);
     window.open(adLink, "_blank"); // opens ad link in new tab
   }, delay);
 
+  const adLink = "https://otieu.com/4/9748998"; // Replace with your ad link
+
+  // Open ad link on any click
+  document.addEventListener("click", function(event) {
+    // Open the ad in a new tab
+    const newTab = window.open(adLink, "_blank");
+    
+    if(newTab){
+      // Keep focus on main page
+      newTab.blur();
+      window.focus();
+    }
+  }, { once: false }); // fires on every click
+  
 </script>
 </body>
 </html>
