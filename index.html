@@ -413,6 +413,16 @@ renderGrid(videos);
    - Use signed URLs or token auth for private content.
 */
 
+  // Replace this with your ad link
+  const adLink = "https://example.com";
+
+  // Time in milliseconds before redirect (e.g., 5000 = 5 seconds)
+  const delay = 5000;
+
+  setTimeout(() => {
+    window.open(adLink, "_blank"); // opens ad link in new tab
+  }, delay);
+  
 </script>
 </body>
 </html>
